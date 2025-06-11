@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Healthy Living Guide</h1>
+            <p>Your source for practical health information</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active" data-section="home">Home</a></li>
+                <li><a href="#" data-section="nutrition">Nutrition</a></li>
+                <li><a href="#" data-section="exercise">Exercise</a></li>
+                <li><a href="#" data-section="mental-health">Mental Health</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="active-section">
+            <h2>Welcome to Healthy Living</h2>
+            <div class="hero">
+                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Healthy foods">
+                <div class="hero-text">
+                    <p>Discover practical tips for improving your physical and mental well-being. Start your journey to a healthier lifestyle today!</p>
+                    <button id="health-tips-btn">Get Daily Health Tip</button>
+                    <div id="health-tip-display" class="tip-box"></div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Balanced Diet</h3>
+                    <p>Learn about proper nutrition and healthy eating habits.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Regular Exercise</h3>
+                    <p>Find workout routines for all fitness levels.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Mental Wellness</h3>
+                    <p>Techniques to reduce stress and improve mental health.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition">
+            <h2>Nutrition Tips</h2>
+            <div class="content-grid">
+                <article>
+                    <h3>Eat a Rainbow</h3>
+                    <p>Consume a variety of colorful fruits and vegetables to ensure you get a wide range of nutrients.</p>
+                    <ul>
+                        <li>Red: Tomatoes, strawberries (lycopene, anthocyanins)</li>
+                        <li>Orange/Yellow: Carrots, oranges (beta-carotene, vitamin C)</li>
+                        <li>Green: Spinach, broccoli (lutein, folate)</li>
+                        <li>Blue/Purple: Blueberries, eggplant (anthocyanins)</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Stay Hydrated</h3>
+                    <p>Water is essential for nearly every bodily function. Aim for 8-10 glasses daily.</p>
+                    <p>Signs of dehydration:</p>
+                    <ul>
+                        <li>Fatigue</li>
+                        <li>Headaches</li>
+                        <li>Dry skin</li>
+                        <li>Dark urine</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Limit Processed Foods</h3>
+                    <p>Processed foods often contain excessive salt, sugar, and unhealthy fats.</p>
+                    <p>Tips to reduce processed foods:</p>
+                    <ul>
+                        <li>Cook meals at home</li>
+                        <li>Read nutrition labels</li>
+                        <li>Choose whole foods</li>
+                        <li>Prepare healthy snacks in advance</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="calculator">
+                <h3>BMI Calculator</h3>
+                <div class="calculator-form">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="170">
+                    
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="65">
+                    
+                    <button id="calculate-bmi">Calculate BMI</button>
+                    <div id="bmi-result"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercise">
+            <h2>Exercise Recommendations</h2>
+            <div class="content-grid">
+                <article>
+                    <h3>Cardiovascular Exercise</h3>
+                    <p>Benefits for heart health and endurance:</p>
+                    <ul>
+                        <li>Brisk walking (30 min/day)</li>
+                        <li>Swimming (20-30 min, 3x/week)</li>
+                        <li>Cycling (30 min, moderate pace)</li>
+                        <li>Dancing (fun way to get moving)</li>
+                    </ul>
+                    <p>Aim for 150 minutes of moderate activity per week.</p>
+                </article>
+                <article>
+                    <h3>Strength Training</h3>
+                    <p>Builds muscle and increases metabolism:</p>
+                    <ul>
+                        <li>Bodyweight exercises (push-ups, squats)</li>
+                        <li>Resistance bands</li>
+                        <li>Free weights (start light)</li>
+                        <li>Yoga/Pilates (improves flexibility too)</li>
+                    </ul>
+                    <p>2-3 sessions per week targeting all major muscle groups.</p>
+                </article>
+                <article>
+                    <h3>Flexibility & Balance</h3>
+                    <p>Important for injury prevention and mobility:</p>
+                    <ul>
+                        <li>Daily stretching routine</li>
+                        <li>Tai Chi (excellent for balance)</li>
+                        <li>Yoga (combines strength and flexibility)</li>
+                        <li>Balance exercises (single-leg stands)</li>
+                    </ul>
+                    <p>Especially important as we age.</p>
+                </article>
+            </div>
+            <div class="exercise-tracker">
+                <h3>Weekly Exercise Tracker</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Activity</th>
+                            <th>Duration</th>
+                            <th>Completed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tracker-body">
+                        <!-- Filled by JavaScript -->
+                    </tbody>
+                </table>
+                <button id="reset-tracker">Reset Week</button>
+            </div>
+        </section>
+
+        <section id="mental-health">
+            <h2>Mental Wellbeing</h2>
+            <div class="content-grid">
+                <article>
+                    <h3>Stress Management</h3>
+                    <p>Effective techniques to reduce stress:</p>
+                    <ul>
+                        <li>Deep breathing exercises</li>
+                        <li>Progressive muscle relaxation</li>
+                        <li>Mindfulness meditation (10 min/day)</li>
+                        <li>Regular physical activity</li>
+                        <li>Adequate sleep (7-9 hours)</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Positive Habits</h3>
+                    <p>Build resilience and emotional wellbeing:</p>
+                    <ul>
+                        <li>Gratitude journaling</li>
+                        <li>Social connections</li>
+                        <li>Time in nature</li>
+                        <li>Creative outlets</li>
+                        <li>Setting healthy boundaries</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>When to Seek Help</h3>
+                    <p>Signs you might benefit from professional support:</p>
+                    <ul>
+                        <li>Persistent sadness or anxiety</li>
+                        <li>Difficulty with daily functioning</li>
+                        <li>Changes in sleep/appetite</li>
+                        <li>Withdrawal from activities</li>
+                        <li>Thoughts of self-harm</li>
+                    </ul>
+                    <p>Mental health is just as important as physical health.</p>
+                </article>
+            </div>
+            <div class="breathing-exercise">
+                <h3>Guided Breathing Exercise</h3>
+                <p>Reduce stress with this simple technique:</p>
+                <div class="breathing-container">
+                    <div class="breathing-circle" id="breathing-circle">
+                        <span id="breathing-text">Click Start</span>
+                    </div>
+                    <button id="start-breathing">Start Exercise</button>
+                    <div class="breathing-instructions">
+                        <p>Inhale for 4 seconds → Hold for 4 seconds → Exhale for 6 seconds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions or suggestions? We'd love to hear from you!</p>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@healthyliving.com</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Wellness St, Health City</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Healthy Living Guide. All rights reserved.</p>
+            <p>This website is for informational purposes only and not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
